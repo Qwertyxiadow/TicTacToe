@@ -2,6 +2,15 @@
 <head>
 </head>
 <body>
+    
+    <button id='yesButton'>
+        Play!
+    <button>
+    
+    <button id='noButton'>
+        Quit
+    <button>
+    
     <script>
     let user = 'dx';
     let password = 'password';
@@ -15,6 +24,9 @@
     if (this.status == 200) { tomberData = JSON.parse(this.responseText);
     xhrGet.open('GET', getLink, true, user, password);
     xhr.send();
+    
+    getElementById('yesButton') = 'Answer yes';
+    getElementById('noButton') = 'Answer no';
     
     function gamePlay () {
     xhrPost.open('POST', postLink, true, user, password);
