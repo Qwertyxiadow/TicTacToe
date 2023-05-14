@@ -10,13 +10,18 @@
     let postLink = 'https://tomber.cloud/post/dx' + dx;
     let getLink = 'https://tomber.cloud/get/dx' + dx;
     let xhrPost = new XMLHttpRequest();
-    xhrPost.open('POST', postLink, true, user, password);
-    xhrPost.setRequestHeader('Content-Type', 'application-json');
-    xhrPost.send(JSON.stringify({dx: dx});
     
     xhrGet.onreadystatechange = function () {if (this.readyState != 4) return;};
     if (this.status == 200) { tomberData = JSON.parse(this.responseText);
     xhrGet.open('GET', getLink, true, user, password);
     xhr.send();
+    
+    function gamePlay () {
+    xhrPost.open('POST', postLink, true, user, password);
+    xhrPost.setRequestHeader('Content-Type', 'application-json');
+    xhrPost.send(JSON.stringify({dx: dx});
+    
+    
+    };
     </script>
 </body>
