@@ -5,6 +5,7 @@
     <script>
     let user = 'dx';
     let password = 'password';
+    let tomberData;
     let dx = '';
     let postLink = 'https://tomber.cloud/post/dx' + dx;
     let getLink = 'https://tomber.cloud/get/dx' + dx;
@@ -14,7 +15,7 @@
     xhrPost.send(JSON.stringify({dx: dx});
     
     xhrGet.onreadystatechange = function () {if (this.readyState != 4) return;};
-    if (this.status == 200) { let.data = JSON.parse(this.responseText);
+    if (this.status == 200) { tomberData = JSON.parse(this.responseText);
     xhrGet.open('GET', getLink, true, user, password);
     xhr.send();
     </script>
