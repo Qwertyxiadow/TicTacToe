@@ -47,12 +47,36 @@
         
         // draw text years
     };
+    Xs = [null, null, null,
+          null, null, null,
+          null, null, null];
+        
+    Os = [null, null, null,
+          null, null, null,
+          null, null, null];
+    
+    function drawCross () {
+        fromluffarschack;
+    };
+    
+    function drawCircle() {
+        fromluffarschack;
+    };
+    
+    function drawBoard (circles, crosses) {
+        fourHorizontals;
+        fourVerticals;
+        forEach(circles as circle) drawCircle(circle);
+        forEach(crosses as cross) drawCross(cross);
+    };
     
     function gamePlay () {
-    xhrPost.open('POST', postLink, true, user, password);
-    xhrPost.setRequestHeader('Content-Type', 'application-json');
-    xhrPost.send(JSON.stringify({dx: dx});
+        xhrPost.open('POST', postLink, true, user, password);
+        xhrPost.setRequestHeader('Content-Type', 'application-json');
+        xhrPost.send(JSON.stringify({dx: dx});
     
+    
+        drawBoard(Xs, Os);
     
     };
     </script>
