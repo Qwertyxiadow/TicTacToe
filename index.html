@@ -11,7 +11,7 @@
         <button>
     </div>
     
-    <div class='canvas';
+    <div class='canvas'>
     </div>
     
     <script>
@@ -31,7 +31,7 @@
     getElementById('yesButton') = 'Answer yes';
     getElementById('noButton') = 'Answer no';
     
-    let canvas;
+    let canvas = getElementById('canvas');
     let context;
     
     function drawFace () {
@@ -39,11 +39,27 @@
     };
     
     function drawEarth () {
-        // draw flatEarth
-
-        // make earth 3D
-
+        drawFlatEarth();
+        makeEarth3D();
     };
+    
+    function drawFlatEarth () {
+        
+    }
+    
+    function makeEarth3D (centerPoint) {
+        centerPoint
+        
+        x;
+        y;
+        z;
+        
+        turnInto3D(x, y, z);
+    }
+    
+    function turnInto3D (x, y, z) {
+        
+    }
     
     function drawTimeline () {
         beziercurves;
