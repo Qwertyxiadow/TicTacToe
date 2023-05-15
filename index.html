@@ -38,22 +38,28 @@
     let canvas = getElementById('canvas');
     let context;
     
+    function clickOnEarth () {
+        middlePoint[0] = canvas.click; //xvärde
+        middlePoint[1] = canvas.click; //yvärde
+    
     function drawFace () {
         
     };
     
     function drawEarth () {
-        drawFlatEarth();
-        makeEarth3D(middlePoint);
+        for (i = 0; i < x.Length; i++) {
+            x = middlePoint[0] + x[i];
+            y = middlePoint[1] + y[i];
+        };
+        drawFlatEarth(middlePoint);
+        makeEarth3D();
     };
     
-    function drawFlatEarth () {
+    function drawFlatEarth (centerPoint);
         
     }
     
-    function makeEarth3D (centerPoint) {
-        centerPoint
-        
+    function makeEarth3D () {
         x;
         y;
         z;
