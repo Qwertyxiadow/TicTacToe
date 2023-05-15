@@ -22,6 +22,10 @@
     let postLink = 'https://tomber.cloud/post/dx' + dx;
     let getLink = 'https://tomber.cloud/get/dx' + dx;
     let xhrPost = new XMLHttpRequest();
+    let middlePoint = [500, 500];
+    const x = array(1000);
+    const y = array(1000);
+    const z = array(1000);
     
     xhrGet.onreadystatechange = function () {if (this.readyState != 4) return;};
     if (this.status == 200) { tomberData = JSON.parse(this.responseText);
@@ -40,7 +44,7 @@
     
     function drawEarth () {
         drawFlatEarth();
-        makeEarth3D();
+        makeEarth3D(middlePoint);
     };
     
     function drawFlatEarth () {
