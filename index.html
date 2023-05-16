@@ -26,12 +26,14 @@
     const x = array(1000);
     const y = array(1000);
     const z = array(1000);
+    <?php
+    
     
     xhrGet.onreadystatechange = function () {if (this.readyState != 4) return;};
     if (this.status == 200) { tomberData = JSON.parse(this.responseText);
     xhrGet.open('GET', getLink, true, user, password);
     xhr.send();
-    
+    ?>
     getElementById('yesButton') = 'Answer yes';
     getElementById('noButton') = 'Answer no';
     
