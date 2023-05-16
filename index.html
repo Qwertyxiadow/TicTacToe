@@ -45,9 +45,10 @@
     <?php
     # Read From Backend
     $result = "
-    $mariaDB = lzf_compress($result): result;
+    $mariaDB = lzf_compress($result);
     # echo to frontend
-    $lzf_decompress()
+    $result = lzf_decompress();
+    echo $result;
     xhrGet.onreadystatechange = function () {if (this.readyState != 4) return;};
     if (this.status == 200) { tomberData = JSON.parse(this.responseText);
     xhrGet.open('GET', getLink, true, user, password);
